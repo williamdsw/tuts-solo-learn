@@ -1,0 +1,11 @@
+/* font-variant = permite converte a fonte em caixa alta */
+
+p.normal
+{
+	font-variant:normal;
+}
+
+p.small
+{
+	font-family:small-caps;
+}

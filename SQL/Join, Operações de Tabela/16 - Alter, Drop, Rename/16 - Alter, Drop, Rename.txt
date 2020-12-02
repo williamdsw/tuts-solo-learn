@@ -1,0 +1,35 @@
+					ALTER, DROP, RENAME
+					
+ALTER TABLE : É usado para adicionar, deletar ou modificar colunas numa tabela existente. 
+
+Ex:
+
+	ALTER TABLE PESSOA
+	ADD COLUMN DATA_NASCIMENTO DATE;
+
+	
+DROP TABLE OU COLUMN: É utilizado para excluir colunas ou tabelas;
+
+Ex 1:
+
+	DROP TABLE PESSOA;
+	
+Ex 2:
+
+	ALTER TABLE PESSOA
+	DROP COLUMN DATA_NASCIMENTO;
+	
+
+CHANGE COLUMN: Renomeia os nomes das colunas. 
+
+Ex :
+
+	ALTER TABLE PESSOA
+	CHANGE COLUMN NOME NOME_COMPLETO VARCHAR(100);
+	
+
+RENAME TABLE : Renomeia o nome das tabelas. 
+
+Ex :
+
+	RENAME TABLE PESSOA TO USUARIOS;

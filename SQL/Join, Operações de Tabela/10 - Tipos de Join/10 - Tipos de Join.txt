@@ -1,0 +1,29 @@
+TIPOS DE JOIN
+
+- São usados três tipos : INNER JOIN, LEFT JOIN, RIGHT JOIN.
+
+- INNER JOIN = É equivalente ao JOIN, e retorna os registros de ambas tabelas quando há uma combinação entre as tabelas.
+
+ex:
+
+	SELECT PRONTUARIO
+	FROM FUNCIONARIOS INNER JOIN AGENDAMENTO
+	ON FUNCIONARIOS.PRONTUARIO = AGENDAMENTO.PRONTUARIO_FUNCIONARIO;
+	
+
+- LEFT JOIN = Retorna todos os registros da coluna à esquerda, mesmo se não houverem combinações na tabela à direita.
+
+ex:
+
+	SELECT PRONTUARIO
+	FROM FUNCIONARIOS LEFT JOIN AGENDAMENTO
+	ON FUNCIONARIOS.PRONTUARIO = AGENDAMENTO.PRONTUARIO_FUNCIONARIO; 
+	
+	
+- RIGHT JOIN = Retorna todos os registros da coluna à direita, mesmo se não houverem combinações na tabela à esquerda.
+
+ex:
+
+	SELECT PRONTUARIO
+	FROM FUNCIONARIOS RIGHT JOIN AGENDAMENTO
+	ON FUNCIONARIOS.PRONTUARIO = AGENDAMENTO.PRONTUARIO_FUNCIONARIO; 

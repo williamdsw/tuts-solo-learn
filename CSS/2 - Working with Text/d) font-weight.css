@@ -1,0 +1,24 @@
+/* font-weight = controla a expessura da fonte. Pode-se utilizar
+				 palavras-chaves (lighter, bold e bolder) quanto
+				 números de 100 até 900
+*/
+
+p.lighter
+{
+	font-weight:lighter;
+}
+
+p.bold
+{
+	font-weight:bold;
+}
+
+p.bolder
+{
+	font-weight:bolder;
+}
+
+p.thick
+{
+	font-weight:700;
+}

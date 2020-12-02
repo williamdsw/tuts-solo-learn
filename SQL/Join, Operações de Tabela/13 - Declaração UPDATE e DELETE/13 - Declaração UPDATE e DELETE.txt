@@ -1,0 +1,16 @@
+UPDATE = Nos permite alterar dados na tabela. É necessário a palavra WHERE, para não atualizar todos os registros.
+
+Ex 1:
+
+	UPDATE ALUNO
+	SET NATURALIDADE = 'Brasileiro'
+	WHERE PRONTUARIO = '1234568';
+	
+
+
+DELETE = É usado para excluir dados da tabela. É necessário a palavra WHERE, para não excluir todos os registros.
+
+Ex 1:
+
+	DELETE FROM NOTIFICACOES
+	WHERE ID = 4;

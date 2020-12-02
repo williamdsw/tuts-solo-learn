@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> Geolocation API</title>
+	</head>
+	<body>
+		<!-- 
+			Essa API pega a localização do usuário, porém precisa ser permitida.
+			É mais apropriada para aparelhos com GPS.
+			
+			métodos:
+			getCurrentPosition() = obtém a posição atual do usuário
+			
+			parâmetros:
+			showLocation (obrigatório): Define o método que pegará informações da localização do usuário
+			ErrorHandler(opcional): Define o método que irá tratar a ocorrência caso ocorra um erro
+			Options (opcional): Define opções para obtenção das informações da localização
+			
+			Mostrando dados:
+
+			Geodetic and Civic.
+
+			1. O Geodetic apresenta dados de latitute de longitude.
+			2. O Civic mostra dados que são mais fáceis de serem lidos pelo usuário.
+		-->
+		
+		<!-- retirado de linhadecodigo.com.br -->
+		
+		<p> Clique no botão para receber sua localização em Latitude e Longitude: </p>
+		
+		<button onclick="pegarLocalizacao()"> Clique Aqui </button>
+		
+		<p id="demo"> Localização: </p>
+		
+		Mapa estático:
+		<div id="mapaEstatico"></div>
+		
+		Mapa dinâmico:
+		<div id="mapaDinamico"></div>
+		
+		<!-- importando API do google maps -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		
+		<!-- importando script -->
+		<script type="text/javascript" src="Geolocation.js"> </script>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+/* vertical-align = serve para alinhar verticalmente elementos. 
+					(mais útil em tabelas)
+*/
+
+/* utilizando palavras-chave ("top", "middle", "bottom") para tabelas */
+td.top
+{
+	vertical-align:top;
+}
+
+td.middle
+{
+	vertical-align:middle;
+}
+
+td.bottom
+{
+	vertical-align:bottom;
+}
+
+/* utilizando outras palavras-chave para "span" */
+span.baseline
+{
+	vertical-align:baseline;
+}
+
+span.sub
+{
+	vertical-align:sub;
+}
+
+span.super
+{
+	vertical-align:super;
+}
+
+span.pixel
+{
+	vertical-align: -10px;
+}
+
+/* Para utilizar o alinhamento vertical em div é necessário algumas mudanças
+   É necessário adicionar "display" junto ao estilo */
+.main
+{
+	height:150px; width:400px;
+	background-color:LightSkyBlue;
+	display:inline-table;
+}
+
+.paragraph
+{
+	display:table-cell;
+	vertical-align:middle;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> HTML Forms 2 </title>
+	</head>
+	<body>
+		<!-- O HTML5 traz algumas mudanças para a formação de web forms -->
+		
+		<!-- Criando uma caixa de busca -->
+		
+		<!-- search = é um tipo de barra de busca-->
+		<input id="mySearch" name="searchItem" type="search" />
+		
+		<br/>
+		
+		<!-- list = indica que o input é tem uma lista (comboBox ?) -->
+		<input id="car" type="text" list="colors"/>
+		
+		<!-- <datalist> = são os itens do List (comboBox ?)
+			 <option> = indica cada item do datalist
+		-->
+		<datalist id="colors">
+			<option value="Red">
+			<option value="Green">
+			<option value="Blue">
+		</datalist>
+		
+		<!-- outros inputs... -->
+		<br/>
+		<input id="email" name="email" type="email" placeholder="example@example.com" />
+		<br/>
+		<input id="url" name="url" type="url" placeholder="example.com" />
+		<br />
+		<input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+		
+	</body>
+</html>

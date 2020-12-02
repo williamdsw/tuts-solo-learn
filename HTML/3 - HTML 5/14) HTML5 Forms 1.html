@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> HTML5 Forms 1</title>
+	</head>
+	<body>
+		<!-- O HTML5 traz algumas mudanças para a formação de web forms -->
+		
+		<!--
+			autocomplete = (on/off) Diz quando aparecerá informações digitadas anteriormente pelo usuário
+			autofocus = Diz qual elemento será focado quando iniciar a página
+			required = Diz qual elemento é obrigatório preencher
+			placeholder = Indica qual tipo de texto deverá ser preenchido
+		-->
+		<form autocomplete="off">
+			<label> Your name: </label>
+			<input id="user" name="username" type="text" autofocus required/>
+			
+			<label for="email"> Your email address : </label>
+			<input type="text" name="email" placeholder="email@example.com" required/>
+			
+			<input type="submit" value="Submit"/>
+		</form>
+		
+	</body>
+</html>

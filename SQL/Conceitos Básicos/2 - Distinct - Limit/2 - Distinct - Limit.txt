@@ -1,0 +1,20 @@
+Palavras chaves :
+
+DISTINCT = É utilizado junto ao SELECT, para eliminar linhas com dados duplicados da tabela.
+
+ex:
+
+	SELECT DISTINCT PERFIL FROM LOGIN;		//seleciona os valores destintos da tabela;
+	
+
+LIMIT = É utilizado para delimitar a quantidade de linhas à ser mostrada, podendo também indicar a posição
+		de qual a ser mostrada.
+		
+ex:
+
+	SELECT * FROM NOTIFICACOES
+	LIMIT 10 (NUMERO DE LINHAS);		//seleciona 10 linhas de valores da tabela;
+	
+	SELECT * FROM NOTIFICACOES
+	LIMIT 3,4;							//seleciona 4 linhas de valores da tabela, a partir da 3a posição;
+	

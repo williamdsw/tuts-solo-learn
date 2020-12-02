@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> SVG Animations & Paths </title>
+	</head>
+	<body>
+		<!--
+			<animate> = Tag que permite a criação de animações de objetos SVG
+				attributeName: Nome do atributo que será afetado pela animação
+				from: Especifica o valor de ínicio do atributo
+				to: Especifica o valor de fim do atributo
+				dur: Especifica a duração da animação
+				fill: Especifica se o valor do atributo deve voltar ao valor inicial depois de finalizada a animação.
+					  - remove = reseta o valor;
+					  - freeze = mantém o valor;
+				repeatCount: Especifica o número de repetições da animação. (indefinite = loop)
+
+		-->
+		<svg width="1000" height="250">
+			<rect width="150" height="150" fill="orange">
+				<animate attributeName="x" 
+						 from="0" to="300"
+						 dur="3s" fill="freeze"
+						 repeatCount="2"/>
+			</rect>
+		</svg>
+		
+		<br/>
+		
+		<!-- <path> = é a tag utilizada para definir paths -->
+		<svg width="500" height="500">
+			<path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+		</svg>
+		
+	</body>
+</html>

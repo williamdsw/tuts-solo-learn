@@ -1,0 +1,11 @@
+INSERT = Utilizado para adicionar novos registros de valores em uma tabela de base de dados.
+
+Ex 1:
+
+	INSERT INTO CURSO
+	VALUES (1, 'Técnico em Informática', 'Vespertino', 'Médio-Técnico', '2017-05-03 17:00:59');
+	
+Ex 2: 	
+
+	INSERT INTO CURSO (ID_CURSO, NOME, PERIODO, NIVEL, DATA_CADASTRO)
+	VALUES (1, 'Técnico em Informática', 'Vespertino', 'Médio-Técnico', '2017-05-03 17:00:59');

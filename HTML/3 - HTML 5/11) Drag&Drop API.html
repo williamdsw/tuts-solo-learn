@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> Drag & Drop API </title>
+			<!-- importando arquivo js -->
+			<script type="text/javascript" src="Drag&Drop.js"></script>
+	</head>
+	<body>
+		<!-- Drag & Drop é uma característica que lhe permite "pegar" um objeto e coloca-lo em outra posição -->
+		
+
+		<!-- 
+			<div> que receberá o arquivo 
+				id = identificador
+				ondrop = evento que chama a função quando o elemento é arrastado
+				ondragover = define aonde o objeto pode ser arrastado
+		-->		
+		<div id="box" ondrop="drop(event)"
+			 ondragover="allowDrop(event)"
+			 style="border:1px solid black;
+					width:200px; height:200px">
+		</div>
+		
+		<!-- draggable = define que o elemento é "pegável". 
+			ondragstart = evento que chama a função que especifica qual dado será arrastado -->
+		<img id="image" src="logo.jpg" 
+			 draggable="true" ondragstart="drag(event)"
+			 width="150" height="150" alt=""/>
+			 	
+	</body>
+</html>

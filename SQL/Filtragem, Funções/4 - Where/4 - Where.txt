@@ -1,0 +1,16 @@
+Filtragem
+
+WHERE : É uma clausula utilizada para extrair apenas os registros
+		que preenchem um critério especificado.
+		
+Ex:
+
+	SELECT * FROM NOTIFICACOES
+	WHERE PRIORIDADE = 'Normal';
+	
+BETWEEN : Esse operador seleciona valores dentro de um alcance. O primeiro
+		  valor deve ser o menor e segundo o maior.
+		  
+	SELECT * FROM NOTIFICACOES
+	WHERE ID 
+	BETWEEN 3 AND 7;

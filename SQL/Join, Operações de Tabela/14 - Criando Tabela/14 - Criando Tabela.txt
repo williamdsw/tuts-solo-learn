@@ -1,0 +1,22 @@
+- Tabelas são feitas de colunas de linhas;
+
+CREATE TABLE = Comando usado para criar uma tabela;
+
+Ex 1:
+
+	CREATE TABLE PESSOA
+	(
+		ID INT,
+		NOME VARCHAR(100),
+		EMAIL VARCHAR(20),
+		PRIMARY KEY(ID)
+	)
+	
+	PRIMARY KEY = Indica a chave primária da tabela.
+	
+Alguns tipos :
+
+Númericos = INT, FLOAT, DOUBLE.
+Data e Tempo = DATE, DATETIME, TIMESTAMP, TIME.
+String = CHAR, VARCHAR, BLOB, TEXT.
+

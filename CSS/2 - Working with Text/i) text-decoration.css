@@ -1,0 +1,38 @@
+/* text-decoration = espefica como o elemento será decorado
+*/
+
+/* sem decoração */
+p.none
+{
+	text-decoration:none;
+}
+
+/* herda do elemento pai */
+p.inherit
+{
+	text-decoration:inherit;
+}
+
+/* linha cima do texto*/
+p.overline
+{
+	text-decoration:overline;
+}
+
+/* linha abaixo do texto (sublinhado) */
+p.underline
+{
+	text-decoration:underline;
+}
+
+/* linha sobre o texto */
+p.line-through
+{
+	text-decoration:line-through;
+}
+
+/* não é mais suportado */
+p.blink
+{
+	text-decoration:blink;
+}

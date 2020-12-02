@@ -1,0 +1,22 @@
+/* text-align = propriedade que define o alinhamento do texto.
+*/
+
+p.left
+{
+	text-align:left;
+}
+
+p.right
+{
+	text-align:right;
+}
+
+p.center
+{
+	text-align:center;
+}
+
+p.justify
+{
+	text-align:justify;
+}

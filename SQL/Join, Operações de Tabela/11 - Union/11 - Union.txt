@@ -1,0 +1,21 @@
+				UNION
+				
+- UNION = Combina múltiplos datasets em um único dataset e remove quaisquer valores duplicados.
+	--É utilizado para combinar dois ou mais "SELECT"s.
+	--Todos os SELECT devem ter o mesmo número de colunas e devem ser do mesmo tipo.
+	
+EX:
+
+	SELECT PRONTUARIO, NOME, RG FROM FUNCIONARIOS
+	UNION 
+	SELECT PRONTUARIO, NOME, RG FROM ALUNO;
+
+- UNION ALL = seleciona todas as colunas de cada tabela e combina elas em uma tabela única.
+	--Serão incluidas as linhas duplicadas.
+	
+EX:
+
+	SELECT PRONTUARIO, NOME, RG FROM FUNCIONARIOS
+	UNION ALL
+	SELECT PRONTUARIO_FUNCIONARIO, NOME_PROFISSIONAL FROM AGENDAMENTO;
+	

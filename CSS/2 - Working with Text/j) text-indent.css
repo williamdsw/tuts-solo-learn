@@ -1,0 +1,10 @@
+/* text-indent = especifica quanto espaço horizontal 
+				 deve ser aplicado à esquerda na 
+				 primeira linha do texto.
+*/
+
+/* utilizando px */
+p
+{
+	text-indent:60px;
+}

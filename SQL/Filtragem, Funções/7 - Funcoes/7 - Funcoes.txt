@@ -1,0 +1,7 @@
+Funcoes
+
+AVG() = Retorna a média de um valor que pertence à uma coluna númerica.
+
+Ex:
+
+	SELECT AVG(IDADE) FROM ALUNO;

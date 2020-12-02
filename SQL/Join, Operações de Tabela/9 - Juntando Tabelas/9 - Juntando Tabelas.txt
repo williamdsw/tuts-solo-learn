@@ -1,0 +1,11 @@
+JUNTANDO TABELAS
+
+- Quer dizer combinar duas ou mais tabelas. O Join cria uma tabela temporária, mostrando os dados das tabelas
+combinadas. Para isso, é necessário o uso da vírgula para separa as condições.
+
+ex:
+
+	SELECT FUNCIONARIOS.PRONTUARIO, FUNCIONARIOS.NOME, LOGIN.PERFIL
+	FROM FUNCIONARIOS, LOGIN
+	WHERE FUNCIONARIOS.PRONTUARIO = LOGIN.PRONTUARIO
+	ORDER BY FUNCIONARIOS.PRONTUARIO;

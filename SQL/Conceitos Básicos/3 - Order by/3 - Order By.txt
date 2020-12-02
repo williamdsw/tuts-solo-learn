@@ -1,0 +1,11 @@
+Ordenando resultados :
+
+ORDER BY : É usado com o SELECT para ordernar os dados retornados.
+
+ex:
+
+	SELECT * FROM MODULO  	//Irá ordenar as linhas pela coluna NOME, de forma crescente.
+	ORDER BY NOME;
+	
+	SELECT * FROM MODULO		//Irá ordernar as linhas pela coluna NOME e PLATAFORMA de forma crescente.
+	ORDER BY NOME, PLATAFORMA;

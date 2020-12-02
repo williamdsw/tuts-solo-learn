@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> Web Storage API </title>
+	</head>
+	<body>
+		<!-- 
+			Essa API é utilizada para armazenar dados de um website em um computador local do usuário.
+			Existem dois tipos de armazenamento:
+				- sessionStorage()
+				- localStorage()
+
+			Local vs. Session
+			- Session Storage é destruído quando o usuário fecha o navegador
+			- Local Storage guarda os dados com nenhuma data de expiração
+			(necessário JavaScript)
+			
+			Alguns métodos:
+			- localStorage.setItem("key1", "value1"); = Guarda um valor
+			- alert(localStorage.getItem("key1")); = Recupera e exibe um valor
+			- localStorage.removeItem("key1"); = Remove um valor
+			 - localStorage.clear(); = Remove todos valores
+		-->
+		
+		<!-- retirado do linha de código -->
+		
+		<!-- funcões -->
+		<script type="text/javascript" src="LocalStorage.js"></script>
+		
+		<!-- text box -->
+		Chave:
+		<input type="text" id="txtChave"/>
+		Valor:
+		<input type="text" id="txtValor"/>
+		<hr/>
+		
+		<!-- buttons -->
+		<button id="btnAdicionar" onclick="adicionar()"> Adicionar item </button>
+		<button id="btnLer" onclick="ler()"> Ler item </button>
+		<button id="btnRemover" onclick="remover()"> Remover item </button>
+		<button id="btnLimpar" onclick="limpar()"> Limpar item </button>
+		
+	</body>
+</html>

@@ -1,0 +1,19 @@
+/* text-transform = especifica como capitalizar os elementos. */
+
+/* capitalize = Toda primeira letra de cada palavra estará em caixa alta */
+p.capitalize
+{
+	text-transform:capitalize;
+}
+
+/* uppercase = Todas as palavras estarão em caixa alta */
+p.uppercase
+{
+	text-transform:uppercase;
+}
+
+/* lowercase = Todas as palavras estarão em caixa baixa */
+p.lowercase
+{
+	text-transform:lowercase;
+}

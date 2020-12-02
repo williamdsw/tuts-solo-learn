@@ -1,0 +1,36 @@
+											VIEW
+
+No SQL, uma VIEW é uma tabela virtual que é baseada num resultado de um comando SQL.
+Uma VIEW contem linhas e colunas, como uma tabela real. Os campos numa VIEW são campos de uma ou mais tabela reais do banco.
+
+VIEWS nos permite:
+- Estruturar dados em uma maneira que os usuários ou classes de usuários achem natural ou intuitiva.
+- Restringir acesso para os dados de uma maneira que o usuário pode ser e as vezes modificar exatamente o que ele precisa e nada mais.
+- Resumir dados de várias tabelas e usar para gerar relatórios.
+
+COMANDOS :
+
+- CREATE VIEW = Nos permite criar uma visualização de uma combinação de colunas de uma ou mais tabelas.
+
+EX:
+
+	CREATE VIEW PESSOA AS 
+	SELECT FUNCIONARIOS.PRONTUARIO, FUNCIONARIOS.NOME, LOGIN.ID_LOGIN, LOGIN.PERFIL,
+	FROM FUNCIONARIOS, LOGIN
+	WHERE FUNCIONARIOS.PRONTUARIO = LOGIN.PRONTUARIO;
+	
+	
+- REPLACE VIEW = Nos permite substituir uma VIEW por outra.
+
+EX:
+
+	CREATE OR REPLACE VIEW PESSOA AS 
+	SELECT FUNCIONARIOS.PRONTUARIO, FUNCIONARIOS.NOME, LOGIN.ID_LOGIN, LOGIN.PERFIL,
+	FROM FUNCIONARIOS, LOGIN
+	WHERE FUNCIONARIOS.PRONTUARIO = LOGIN.PRONTUARIO;
+	
+- DROP VIEW = Nos permite excluir uma VIEW pertecente ao bando de dados.
+
+EX:
+
+	DROP VIEW PESSOA;

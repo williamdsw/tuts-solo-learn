@@ -1,0 +1,19 @@
+- Constraits no SQL são usadas pra especificar regras para dados da tabela. Alguns deles :
+
+NOT NULL = Indica que a coluna não pode receber qualquer valor NULL;
+
+UNIQUE = Não permite a inserção de valorews duplicados numa coluna;
+
+CHECK = Determina se o valor é valido ou não de uma expressão lógicos;
+
+DEFAULT = Se o valor não for fornecido à uma coluna, então a coluna receberá o valor DEFAULT especificado.
+
+ex:
+
+	CREATE TABLE PESSOA
+	(
+		ID INT NOT NULL AUTO_INCREMENT,
+		NOME VARCHAR(100) NOT NULL,
+		EMAIL VARCHAR(20) NULL,
+		PRIMARY KEY(ID)
+	)

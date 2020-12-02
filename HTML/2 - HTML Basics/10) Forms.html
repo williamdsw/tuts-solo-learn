@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title> Forms </title>
+	</head>
+	<body>
+		<!--
+			<form> = É utilizado para armazenar informações do usuário
+				action = é utilizado para indicar uma página que será exibida depois do submit
+				method = é a forma que será passada a informação.
+				"GET" = a informação será visualizada na url da página
+				"POST" = a informação não será visualizada na url da página, sendo recomendado para senhas
+		-->
+		<form action="www.google.com" method="GET">
+		</form>
+		
+		<!-- 
+			<input> = é um text box
+			type = é o tipo de text box 
+			name = é o nome do elemento?
+		-->
+		<form>
+			username <input type="text" name="username"/> </br>
+			password <input type="password" name="password"/>
+		</form>
+		
+		<!-- radio = é do tipo radio button, value = é valor ou "label-text" do radio button-->
+		<form>
+			<input type="radio" name="gender" value="male"/> Male </br>
+			<input type="radio" name="gender" value="female"/> Female </br>
+		</form>
+		
+		<!-- checkbox = é do tipo check box -->
+		<form>
+			<input type="checkbox" name="gender" value="male"/> Male </br>
+			<input type="checkbox" name="gender" value="female"/> Female </br>
+		</form>
+		
+		<!-- textarea = é um rich text box -->
+		<textarea name="message"> </textarea>
+		
+		<br>
+		
+		<!-- submit = é do tipo button, serve para enviar informações à serem tratadas -->
+		<form>
+			<input type="submit" value="Submit"/>
+		</form>
+	</body>
+</html>

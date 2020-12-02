@@ -1,0 +1,32 @@
+/* Sintax do CSS =
+Seletor - Propriedade - Valor */
+h1 {color:orange;}
+
+/* Seletor de tipos = seleciona o tipo de elementos (nesse caso h2) */
+h2
+{
+	color:red;
+	font-size:130%;
+}
+
+/* Seletor de ID = seleciona os elementos pelo ID especificado */
+#intro
+{
+	color:white;
+	background-color:grey;
+}
+
+/* Seletor de Classe = seleciona os elementos pela classe especificada */
+.first
+{
+	color:yellow;
+	background-color:black;
+	font-size:200%;
+}
+
+/* Utilizando "herança" de estilos */
+#intro .first em
+{
+	color:pink;
+	background-color:white;
+}

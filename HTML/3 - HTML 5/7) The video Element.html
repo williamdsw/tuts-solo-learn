@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> The video element</title>
+	</head>
+	<body>
+	
+		<!-- 
+			<video> = Mostra um player de video no navegador
+				controls = define que o video deve ser tocado por um botão "play"
+				<source> = tag relacionada ao video
+				src = endereço do arquivo de video
+				type = tipo de extensão do arquivo
+		-->
+		<video controls>
+			<source src="myVideo.mp4" type="video/mp4">
+			Video is not supported by your browser
+		</video>
+		
+		<!-- autoplay = o player irá tocar sozinho, loop = irá repetir o vídeo -->
+		<video controls autoplay loop>
+			<source src="myVideo.mp4" type="video/mp4">
+			Video is not supported by your browser
+		</video>
+		
+	</body>
+</html>

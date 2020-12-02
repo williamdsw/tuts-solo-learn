@@ -1,0 +1,25 @@
+/* white-space = lida com o espaçamento em branco */
+
+/* nowrap = elimina todas quebra de linhas */
+p
+{
+	white-space:nowrap;
+}
+
+/* pre = o texto irá apenas envolver-se nas quebra de linhas e espaços em branco */
+p.pre
+{
+	white-space:pre;
+}
+
+/* preline = o texto irá apenas envolver-se nas quebras de linhas, mas espaços em brancos serão ignorados */
+p.preline
+{
+	white-space:pre-line;
+}
+
+/* prewrap = o texo irá apenas envolver-se quando necessário, e em quebra de linha*/
+p.prewrap
+{
+	white-space:pre-wrap;
+}

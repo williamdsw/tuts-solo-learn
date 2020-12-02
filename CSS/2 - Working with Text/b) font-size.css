@@ -1,0 +1,40 @@
+/* font-size = é a propriedade que define o tamanho da fonte.
+			   pode ser usada as palavras-chave "small", "medium",
+			   "large" e "x-large".
+			   
+			   Também é possível utilizar "px" e "em" para definir o
+			   tamanho.
+ */
+
+/* Utilizando palavras-chave */
+p.small
+{
+	font-size:small;
+}
+
+p.medium
+{
+	font-size:medium;
+}
+
+p.large
+{
+	font-size:large;
+}
+
+p.xlarge
+{
+	font-size:x-large;
+}
+
+/* Utilizando valores em "px" e "em" */
+
+h1
+{
+	font-size: 20px;
+}
+
+h2
+{
+	font-size: 1.25em;
+}

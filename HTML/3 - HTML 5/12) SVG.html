@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title> Manipulando SVG </title>
+	</head>
+	<body>
+		<!--
+			Desenhando formas
+			
+			SVG (Scalable Vector Graphics) é usado para desenhar formas com HTML.
+			Oferece diversos métodos para desenhar caminhos, caixas, circulos, texto e imagens gráficas.
+			SGV não é do tipo pixel, por isso pode ser escalonado infinitamente sem perder a qualidade
+		-->
+		
+		<!-- basta apenas indicar o endereço da imagem -->
+		Mapa do Brasil em SVG: <br>
+		<img src="brasil_mapa.svg" alt="" height="300"/>
+		
+		<br>
+		
+		<!--
+			CIRCULO:
+			
+			Para criar formas é necessário a tag <svg>
+			junto com as propriedades height e width.
+			<circle> = tag que cria um circulos
+				cx = puxa o centro do circulo ?px para a direita da tela
+				cy = puxa o centro do circulo ?px para baixo da tela
+				fill = preenche o circulo com determinada cor
+				stroke = desenha uma borda no circulo
+		-->
+		Círculo: <br>
+		<svg height="300" width="300">
+			<circle cx="100" cy="100" r="80" fill="green"/>
+		</svg>
+		
+		<br>
+		
+		<!--
+			RETÂNGULO:
+			
+			<rect> = tag que cria um retângulo
+				width = determina largura
+				height = determina altura
+				x = quantos px será puxado para a direita da tela
+				y = quantos px será puxado para baixo da tela
+				fill = preenche com determinada cor
+		-->
+		Retângulo: <br>
+		<svg height="300" width="300">
+			<rect width="300" height="100"
+				  x="50" y="50" fill="green"/>
+		</svg>
+		
+		<br>
+		
+		<!--
+			LINHA:
+			
+			<line> = tag que cria um segmento de linha
+				x1 = posição em x
+				y2 = posição em y
+				x2 = segunda posição em x
+				y2 = segunda posição em y
+				style = propriedades de estilo
+		-->
+		Linha: <br>
+		<svg height="300" width="300">
+			<line x1="10" y1="10" x2="200" y2="100"
+				  style="stroke: #000000; stroke-linecap: round; stroke-width:20"/>
+		</svg>
+		
+		<br>
+		
+		<!--
+			POLILINHA:
+			
+			<polyline> = tag que cria várias linhas
+				style = características de cor, tipo, largura.
+				points = todos os pontos
+		-->
+		Polilinhas: <br>
+		<svg height="300" width="300">
+			<polyline style="stroke-linejoin: minter; stroke: black;
+					  stroke-width: 12; fill: none;"
+					  
+					  points= "50 50, 75 75, 100 50" />		
+		</svg>
+		
+		<br>
+		
+		<!--
+			ELIPSE: é parecido com <circle>, com diferença que os eixos do centro são manipuláveis
+			
+			<ellipse> = tag necessária para criação de elipses
+				cx = puxa o centro da ellipse ?px para a direita da tela
+				cy = puxa o centro da ellipse ?px para baixo da tela
+				rx = posição do eixo x do radio da ellipse
+				ry = posição do eixo y do radio da ellipse
+				style = propriedades de estilo
+		-->
+		Elipse: <br>
+		<svg height="300" width="300">
+			<ellipse cx="100" cy="100" rx="100" ry="100" style="fill:green" />
+		</svg>
+		
+		<br>
+		
+		<!--
+			POLÍGONO: é feito de três pontos, onde o quarto ponto é preenchido automaticamente
+			
+			<polygon> = tag usada para fazer polígonos
+				points = pontos usados
+				style = estilo usado
+		-->
+		Polígono: <br>
+		<svg height="500" width="500">
+			<polygon points="100 100, 200 300, 300 0"
+					 style="fill: green; stroke: black;"/>
+		</svg>
+		
+		<br>
+			
+	</body>
+</html>

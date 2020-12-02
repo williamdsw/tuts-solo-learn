@@ -1,0 +1,21 @@
+/* color = propriedade que define a cor do texto do elemento.
+		   pode ser usado nome da cor ("green"), valores 
+		   hexadecimais ("#0000FF") e método "rgb(250,0,0)"
+*/
+
+p.example
+{
+	color:green;
+}
+
+h1
+{
+	/* #0000FF = azul */
+	color:#0000FF;
+}
+
+h2
+{
+	/* rgb(250,0,0) = vermelho */
+	color:rgb(250,0,0);
+}

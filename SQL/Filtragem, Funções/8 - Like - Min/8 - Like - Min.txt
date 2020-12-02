@@ -1,0 +1,25 @@
+										PALAVRAS CHAVE LIKE E MIN
+
+LIKE = É util para especificar uma condição de uma busca com uma clausula WHERE.
+	   Utiliza-se o caracter % junto com a string desejada.
+	 
+Exemplo : 
+
+	SELECT * FROM NOTIFICACOES
+	WHERE PRIORIDADE
+	LIKE 'G%' 					(Irá retornar todos os registros que começam com a letra G na coluna PRIORIDADE)
+	
+	SELECT * FROM NOTIFICACOES
+	WHERE PRIORIDADE
+	LIKE '%s' 					(Irá retornar todos os registros que terminam com a letra s na coluna PRIORIDADE)
+	
+	
+
+Função MIN() = É utilizada para retornar o valor mínimo de uma expressão SELECT.
+
+Exemplo : 
+
+	SELECT MIN(IDADE) AS IDADE
+	FROM FUNCIONARIOS
+	
+	

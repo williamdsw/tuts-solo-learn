@@ -1,0 +1,30 @@
+OPERADORES LÓGICOS
+
+- São utilizados para combinar dois valores Boolean e retornar o valor de true, false ou null. Alguns deles :
+
+AND = Retorna TRUE se ambas condições forem TRUE.
+
+EX:
+	SELECT NOME FROM ALUNO
+	WHERE IDADE >= 15 AND IDADE <= 20;
+	
+	
+OR = Retorna TRUE apenas uma das condições for TRUE.
+
+EX:
+	SELECT * FROM NOTIFICACOES
+	WHERE PRIORIDADE = 'Grave' OR PRIORIDADE = 'Média';
+	
+	
+IN = Retorna se o valor do campo for igual à um valor da lista especificada.
+
+EX:
+	SELECT * FROM FUNCIONARIOS
+	WHRE UF IN('SP', 'RJ', 'MG');
+	
+	
+NOT IN = Retorna TRUE se a condição não estiver na lista.
+
+EX:
+	SELECT * FROM FUNCIONARIOS
+	WHRE UF NOT IN('SP');

@@ -1,0 +1,22 @@
+Comandos básicos 1 :
+
+SHOW = Retorna informações contidas na base de dados e de suas tabelas.
+
+exemplo :
+
+	SHOW DATABASES;	//Retorna todas as bases de dados contidas no banco
+	
+	SHOW TABLES; //Retorna todas as tabelas contidas em determinada base de dados;
+	
+	SHOW COLUMNS FROM "TABELA" //Retorna todas as colunas de determinada tabela
+
+SELECT = Retorna uma seleção de dados de uma ou mais tabelas;
+
+exemplo :
+
+	SELECT nome FROM aluno;		//retorna todos os nomes inseridos nessa tabela
+	
+	SELECT nome, idade, cidade FROM aluno //retorna mais de uma coluna
+	
+	SELECT * FROM aluno ; // retorna todos as colunas e dados da tabela
+	

@@ -1,0 +1,15 @@
+COLUNAS CUSTOMIZADAS
+
+- Função CONCAT = Realiza a concatenação de duas ou mais strings.
+
+Ex:
+
+	SELECT CONCAT(NOME, ',' ,PRONTUARIO) FROM ALUNO
+	
+	
+- Operador AS = Define o valor da coluna criada pela função CONCAT, que tem de valor default o nome CONCAT :
+
+Ex:
+
+	SELECT CONCAT(NOME, ',' ,PRONTUARIO) AS ALUNOS
+	FROM ALUNO
