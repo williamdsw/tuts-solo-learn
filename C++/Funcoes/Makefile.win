@@ -1,0 +1,43 @@
+# Project: Funcoes
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = IntroducaoFuncoes.o ParametrosFuncoes.o MultiplosParametros.o NumerosRandomicos.o SobrecargaMetodo.o Recursao.o
+LINKOBJ  = IntroducaoFuncoes.o ParametrosFuncoes.o MultiplosParametros.o NumerosRandomicos.o SobrecargaMetodo.o Recursao.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Funcoes.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+IntroducaoFuncoes.o: IntroducaoFuncoes.cpp
+	$(CPP) -c IntroducaoFuncoes.cpp -o IntroducaoFuncoes.o $(CXXFLAGS)
+
+ParametrosFuncoes.o: ParametrosFuncoes.cpp
+	$(CPP) -c ParametrosFuncoes.cpp -o ParametrosFuncoes.o $(CXXFLAGS)
+
+MultiplosParametros.o: MultiplosParametros.cpp
+	$(CPP) -c MultiplosParametros.cpp -o MultiplosParametros.o $(CXXFLAGS)
+
+NumerosRandomicos.o: NumerosRandomicos.cpp
+	$(CPP) -c NumerosRandomicos.cpp -o NumerosRandomicos.o $(CXXFLAGS)
+
+SobrecargaMetodo.o: SobrecargaMetodo.cpp
+	$(CPP) -c SobrecargaMetodo.cpp -o SobrecargaMetodo.o $(CXXFLAGS)
+
+Recursao.o: Recursao.cpp
+	$(CPP) -c Recursao.cpp -o Recursao.o $(CXXFLAGS)

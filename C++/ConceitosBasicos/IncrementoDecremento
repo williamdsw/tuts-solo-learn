@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int numero = 20;
+	
+	cout << "Incremento : " << ++numero << endl;
+	cout << "Decremento : " << --numero << endl;
+	
+	cout << "Nova soma : ";
+	numero += 3; 
+	cout << numero << endl;
+	
+	cout << "Nova subtração : ";
+	numero -= 2; 
+	cout << numero << endl;
+	
+	cout << "Nova multiplicação : ";
+	numero *= 2; 
+	cout << numero << endl;
+	
+	cout << "Nova divisão : ";
+	numero /= 3; 
+	cout << numero << endl;
+	
+	cout << "Novo módulo : ";
+	numero %= 5; 
+	cout << numero << endl;
+	
+	return 0;
+}
